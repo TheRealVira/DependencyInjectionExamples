@@ -41,7 +41,7 @@ namespace TestApplication
                     using (var client = new WebClient())
                     {
                         client.DownloadFile(
-                            "https://raw.githubusercontent.com/TheRealVira/DependencyInjectionExamples/master/Example_XML_Files/CSharp_example.xml",
+                            "https://raw.githubusercontent.com/TheRealVira/DependencyInjectionExamples/master/Example%20XML%20Files/CSharp_example.xml",
                             @"example.xml");
                     }
                     goto LOAD;
