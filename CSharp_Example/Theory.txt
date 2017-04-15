@@ -1,0 +1,11 @@
+Printer Library:
+1. Create an IConsoleOutputable interface.
+|-> void print(string text);
+2. Create an IConsoleOutputable-Factory, which is able to read (and save) Printer (containging a singelton IConsoleOutputable).
+
+Testing application:
+1. Create a menu
+|-> O1: Generate example
+||-> Let the factory generate a Printer and save it as "example.xaml".
+|-> O2: Load file
+||-> Loading "example.xaml" and calling the print function (with "test" as parameter).

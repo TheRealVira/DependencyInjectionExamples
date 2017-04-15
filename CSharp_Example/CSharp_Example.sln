@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Thoughts", "Thoughts", "{F2F07DE4-E70D-4D0D-943A-98B708CA8100}"
+	ProjectSection(SolutionItems) = preProject
+		Problem.txt = Problem.txt
+		Theory.txt = Theory.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Printer", "Printer\Printer.csproj", "{0BAF5C47-B925-497B-A723-BF7943E0FCD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{0EA14E69-F733-4313-A0AC-DF70BA1ABA48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BAF5C47-B925-497B-A723-BF7943E0FCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAF5C47-B925-497B-A723-BF7943E0FCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAF5C47-B925-497B-A723-BF7943E0FCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAF5C47-B925-497B-A723-BF7943E0FCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA14E69-F733-4313-A0AC-DF70BA1ABA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA14E69-F733-4313-A0AC-DF70BA1ABA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA14E69-F733-4313-A0AC-DF70BA1ABA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA14E69-F733-4313-A0AC-DF70BA1ABA48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
