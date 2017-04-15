@@ -6,7 +6,7 @@
 // Project: Printer
 // Filename: Example1.cs
 // Date - created:2017.04.15 - 10:02
-// Date - current: 2017.04.15 - 10:39
+// Date - current: 2017.04.15 - 11:12
 
 #endregion
 
@@ -19,12 +19,12 @@ using System;
 namespace Printer.Buildin_Examples
 {
     /// <summary>
-    /// Represents an example implementation of IConsoleOutputable
+    ///     Represents an example implementation of IConsoleOutputable
     /// </summary>
     public class Example1 : IConsoleOutputable
     {
         /// <summary>
-        /// Prints the text.
+        ///     Prints the text.
         /// </summary>
         /// <param name="text">The text that is needed to get printed out.</param>
         public void Print(string text)

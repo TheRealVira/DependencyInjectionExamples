@@ -1,4 +1,4 @@
 The problem to solve is the followed one:
 
 Our customer needs a programm that prints out text onto the console.
-The programm should contain a config file (.xaml), which is going to define which IConsoleOutputable is used when running the software, so there is no need to recompile the program.
+The programm should contain a config file (.xml), which is going to define which IConsoleOutputable is used when running the software, so there is no need to recompile the program.

@@ -6,7 +6,7 @@
 // Project: TestApplication
 // Filename: AssemblyInfo.cs
 // Date - created:2017.04.15 - 10:35
-// Date - current: 2017.04.15 - 10:39
+// Date - current: 2017.04.15 - 11:12
 
 #endregion
 

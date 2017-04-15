@@ -6,6 +6,6 @@ Printer Library:
 Testing application:
 1. Create a menu
 |-> O1: Generate example
-||-> Let the factory generate a Printer and save it as "example.xaml".
+||-> Let the factory generate a Printer and save it as "example.xml".
 |-> O2: Load file
 ||-> Loading "example.xaml" and calling the print function (with "test" as parameter).

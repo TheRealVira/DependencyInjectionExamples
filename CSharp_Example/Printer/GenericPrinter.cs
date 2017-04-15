@@ -6,20 +6,21 @@
 // Project: Printer
 // Filename: GenericPrinter.cs
 // Date - created:2017.04.15 - 09:49
-// Date - current: 2017.04.15 - 10:39
+// Date - current: 2017.04.15 - 11:12
 
 #endregion
 
 namespace Printer
 {
     /// <summary>
-    /// Represents a generic type of printer, which allows any type of IConsoleOutputable. This is useful for dependency injections.
+    ///     Represents a generic type of printer, which allows any type of IConsoleOutputable. This is useful for dependency
+    ///     injections.
     /// </summary>
     /// <typeparam name="T">The inner type of this class.</typeparam>
     public class GenericPrinter<T> : IConsoleOutputable where T : IConsoleOutputable, new()
     {
         /// <summary>
-        /// Inner type.
+        ///     Inner type.
         /// </summary>
         private readonly IConsoleOutputable _myMethod;
 
@@ -29,7 +30,7 @@ namespace Printer
         }
 
         /// <summary>
-        /// Prints the text in the way used by the inner type.
+        ///     Prints the text in the way used by the inner type.
         /// </summary>
         /// <param name="text">The text that is needed to get printed out.</param>
         public void Print(string text)

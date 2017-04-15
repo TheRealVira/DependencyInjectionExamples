@@ -6,7 +6,7 @@
 // Project: Printer
 // Filename: Example2.cs
 // Date - created:2017.04.15 - 10:03
-// Date - current: 2017.04.15 - 10:39
+// Date - current: 2017.04.15 - 11:12
 
 #endregion
 
@@ -20,12 +20,12 @@ using System.Linq;
 namespace Printer.Buildin_Examples
 {
     /// <summary>
-    /// Represents an example implementation of IConsoleOutputable
+    ///     Represents an example implementation of IConsoleOutputable
     /// </summary>
     public class Example2 : IConsoleOutputable
     {
         /// <summary>
-        /// Prints the text in reverse.
+        ///     Prints the text in reverse.
         /// </summary>
         /// <param name="text">The text that is needed to get printed out.</param>
         public void Print(string text)

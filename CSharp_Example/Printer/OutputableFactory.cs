@@ -6,7 +6,7 @@
 // Project: Printer
 // Filename: OutputableFactory.cs
 // Date - created:2017.04.15 - 09:52
-// Date - current: 2017.04.15 - 10:39
+// Date - current: 2017.04.15 - 11:12
 
 #endregion
 
@@ -14,13 +14,14 @@
 
 using System.IO;
 using System.Xaml;
+using System.Xml;
 
 #endregion
 
 namespace Printer
 {
     /// <summary>
-    /// Represents a factory, which is also able to load and save IConsoleOutputable.
+    ///     Represents a factory, which is also able to load and save IConsoleOutputable.
     /// </summary>
     public static class OutputableFactory
     {
@@ -32,7 +33,7 @@ namespace Printer
         public static IConsoleOutputable Factorise<T>() where T : IConsoleOutputable, new() => new T();
 
         /// <summary>
-        /// Loads the IConsoleOutputable from a xaml file.
+        ///     Loads the IConsoleOutputable from a xaml file.
         /// </summary>
         /// <param name="file">The xaml file, which contains the inforamtion for a IConsoleOutputable.</param>
         /// <returns>Returns the loaded IConsoleOutputable.</returns>
@@ -40,12 +41,16 @@ namespace Printer
         {
             using (TextReader reader = File.OpenText(file))
             {
-                return (IConsoleOutputable) XamlServices.Load(reader);
+                return (IConsoleOutputable) XamlServices.Load(XmlReader.Create(reader, new XmlReaderSettings
+                {
+                    DtdProcessing = DtdProcessing.Parse,
+                    MaxCharactersFromEntities = 1024
+                }));
             }
         }
 
         /// <summary>
-        /// Serialises the IConsoleOutputable into xaml file.
+        ///     Serialises the IConsoleOutputable into xaml file.
         /// </summary>
         /// <param name="toSave">The IConsoleOutputable, which has to get saveed.</param>
         /// <param name="file">The file, which is going to contain the serialised code.</param>

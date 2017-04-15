@@ -6,7 +6,7 @@
 // Project: Printer
 // Filename: AssemblyInfo.cs
 // Date - created:2017.04.15 - 09:48
-// Date - current: 2017.04.15 - 10:39
+// Date - current: 2017.04.15 - 11:12
 
 #endregion
 
