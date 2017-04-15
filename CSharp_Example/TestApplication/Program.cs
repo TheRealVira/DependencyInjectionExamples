@@ -31,7 +31,7 @@ namespace TestApplication
             switch (Console.ReadKey(true).Key)
             {
                 case ConsoleKey.D0:
-                    OutputableFactory.Factorise<GenericPrinter<Example1>>().Save("example.xml");
+                    OutputableFactory.Factorise<GenericPrinter<Example3>>().Save("example.xml");
                     break;
                 case ConsoleKey.D1:
                     LOAD:

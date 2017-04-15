@@ -44,7 +44,8 @@ namespace Printer
                 return (IConsoleOutputable) XamlServices.Load(XmlReader.Create(reader, new XmlReaderSettings
                 {
                     DtdProcessing = DtdProcessing.Parse,
-                    MaxCharactersFromEntities = 1024
+                    MaxCharactersFromEntities = 1024,
+                    
                 }));
             }
         }

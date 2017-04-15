@@ -19,7 +19,7 @@ using Printer;
 
 namespace TestApplication
 {
-    internal class Example3 : IConsoleOutputable
+    public class Example3 : IConsoleOutputable
     {
         public void Print(string text)
         {
