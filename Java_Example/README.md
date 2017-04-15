@@ -59,3 +59,24 @@ GenericCalculation gc = (GenericCalculation) context.getBean("genCalc");
 ````
 ### Note
 We do not actually directly call the constructor of ``GenericCalculation``!
+
+### ``GenericCalculation``
+````
+public class GenericCalculation {
+    private ICalculateable _calculateable;
+
+    @Autowired
+    public GenericCalculation(ICalculateable calulateable){
+        this._calculateable = calulateable;
+    }
+
+    public double calculate(double[] values) {
+        return _calculateable.calculate(values);
+    }
+
+    public String getDescription() {
+        return _calculateable.getDescription();
+    }
+}
+````
+The **``@Autowired``** attribute tells the spring framework to automatically pass over the correct parameters (which we have defined inside our bean file).
