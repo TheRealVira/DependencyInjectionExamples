@@ -10,6 +10,6 @@
     <!-- Defining our generic calculator, which may use an other ICalculateable in the future. -->
     <bean class="com.vira.Calulateables.GenericCalculation" id="genCalc">
         <!-- For now I want it to use the maximum calculation. -->
-        <constructor-arg ref="maximum"/>
+        <constructor-arg ref="addition"/>
     </bean>
 </beans>

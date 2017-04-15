@@ -53,7 +53,11 @@ public class MainApp {
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(url.openStream());
 
-        try(  PrintStream out = new PrintStream("out\\production\\Java_Example\\"+ONLINE_CONFIG )  ){
+        try(FileOutputStream out = new FileOutputStream("out\\production\\Java_Example\\"+ONLINE_CONFIG, false)  ){
+            printDocument(doc, out);
+        }
+
+        try(FileOutputStream out = new FileOutputStream("src\\"+ONLINE_CONFIG, false)  ){
             printDocument(doc, out);
         }
 
