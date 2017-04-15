@@ -40,7 +40,7 @@ OutputableFactory.Load("example.xml").Print("This is text!");
 ````
 
 ## Config file
-The config file (a saved ``GenericPrinter``) could look like the followed example:
+The config file (a saved ``GenericPrinter``) could look like the following example:
 
 ````
 <GenericPrinter x:TypeArguments="pb:Example2" xmlns="clr-namespace:Printer;assembly=Printer" xmlns:pb="clr-namespace:Printer.Buildin_Examples;assembly=Printer" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
