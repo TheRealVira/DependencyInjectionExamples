@@ -29,8 +29,8 @@ public class MainApp {
     }
 
     private static String DownloadNewest() throws Exception {
-        final String ONLINE_CONFIG = "o-spring-config.xml";
-        Document doc = loadTestDocument("https://raw.githubusercontent.com/TheRealVira/DependencyInjectionExamples/master/Java_Example/"+ONLINE_CONFIG);
+        final String ONLINE_CONFIG = "Java_example.xml";
+        Document doc = loadTestDocument("https://raw.githubusercontent.com/TheRealVira/DependencyInjectionExamples/master/Example_XML_Files/"+ONLINE_CONFIG);
         System.out.println(doc);
         return ONLINE_CONFIG;
     }
