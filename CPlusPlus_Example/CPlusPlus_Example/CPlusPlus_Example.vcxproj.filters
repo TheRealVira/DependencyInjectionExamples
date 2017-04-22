@@ -42,6 +42,9 @@
     <ClInclude Include="writer2.h">
       <Filter>Header Files\Writer</Filter>
     </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -57,6 +60,9 @@
       <Filter>Source Files\Writer</Filter>
     </ClCompile>
     <ClCompile Include="genericWriter.cpp">
+      <Filter>Source Files\Writer</Filter>
+    </ClCompile>
+    <ClCompile Include="writer.cpp">
       <Filter>Source Files\Writer</Filter>
     </ClCompile>
   </ItemGroup>

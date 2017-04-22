@@ -4,7 +4,7 @@
 #include "writer1.h"
 #include <iostream>
 
-void writer1::print_whatever(const std::string& s)
+void writer1::print_whatever(const std::string s) const
 {
-	std::cout << s;
+	std::cout << "["+s+"]";
 }

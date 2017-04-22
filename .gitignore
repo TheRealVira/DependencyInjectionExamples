@@ -252,6 +252,7 @@ paket-files/
 *.sln.iml
 
 # Boost stuff
-/CPlusPlus_Example/boost_1_64_0_b2/
-!/CPlusPlus_Example/boost_1_64_0_b2/boost/
-!/CPlusPlus_Example/boost_1_64_0_b2/stage/lib/
+!CPlusPlus_Example/
+!CPlusPlus_Example/boost_1_64_0_b2/boost/
+!CPlusPlus_Example/boost_1_64_0_b2/stage/lib/
+CPlusPlus_Example/boost_1_64_0_b2/
