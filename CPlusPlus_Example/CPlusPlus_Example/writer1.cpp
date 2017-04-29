@@ -8,3 +8,5 @@ void writer1::print_whatever(const std::string s) const
 {
 	std::cout << "["+s+"]";
 }
+
+BOOST_CLASS_EXPORT(writer1)

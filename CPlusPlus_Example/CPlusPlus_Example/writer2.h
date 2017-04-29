@@ -11,13 +11,19 @@ public:
 
 	void print_whatever(const std::string s) const override;
 
+
+private:
+	friend class boost::serialization::access;
+
 	template<class Archive>
 	void serialize(Archive & ar, unsigned int file_version)
 	{
 		ar.template register_type<writer2>();
 		ar & BOOST_SERIALIZATION_BASE_OBJECT_NVP(writer);
+		ar & BOOST_SERIALIZATION_NVP(TEMP);
 	}
+
+	std::string TEMP = "temp";
 };
-BOOST_SERIALIZATION_ASSUME_ABSTRACT(writer2)
 
 #endif

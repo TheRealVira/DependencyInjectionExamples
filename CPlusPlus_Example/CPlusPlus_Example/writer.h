@@ -13,7 +13,7 @@ class writer
 public:
 	writer::writer(void){}
 
-	virtual void print_whatever(const std::string s) const;
+	virtual void print_whatever(const std::string s) const = 0;
 
 private:
 	friend class boost::serialization::access;
@@ -21,7 +21,7 @@ private:
 	template<class Archive>
 	void serialize(Archive & ar, const unsigned int version)
 	{
-		ar.template register_type<writer>();
+		//ar.template register_type<writer>();
 	}
 };
 BOOST_SERIALIZATION_ASSUME_ABSTRACT(writer)

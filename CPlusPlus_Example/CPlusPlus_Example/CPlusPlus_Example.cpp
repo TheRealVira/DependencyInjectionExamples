@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "conio.h"
 #include <string>
+#include <boost/serialization/assume_abstract.hpp>
 
 #include "genericWriter.h"
 #include "writer1.h"
@@ -13,11 +14,6 @@
 #include <boost/archive/xml_oarchive.hpp>
 
 using namespace std;
-
-BOOST_CLASS_EXPORT_GUID(writer, "writer")
-BOOST_CLASS_EXPORT_GUID(writer1, "writer1")
-BOOST_CLASS_EXPORT_GUID(writer2, "writer2")
-BOOST_CLASS_EXPORT_GUID(genericWriter, "genericWriter")
 
 int main()
 {
@@ -44,7 +40,9 @@ int main()
 	std::ofstream ofs("CPlusPlus_example.xml");
 
 	// create class instance
-	const writer* test = new genericWriter(*new writer1);
+	/*writer2 wTEMP;
+	writer& wATR = wTEMP;*/
+	const genericWriter* test = new genericWriter(new writer2);
 
 	// save data to archive
 	{

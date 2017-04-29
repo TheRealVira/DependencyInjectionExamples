@@ -5,5 +5,6 @@
 
 void genericWriter::print_whatever(const std::string s) const
 {
-	_methodOfWriting.print_whatever(s);
+	_methodOfWriting->print_whatever(s);
 }
+BOOST_CLASS_EXPORT(genericWriter)

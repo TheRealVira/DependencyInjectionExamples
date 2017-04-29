@@ -18,6 +18,5 @@ public:
 		ar & BOOST_SERIALIZATION_BASE_OBJECT_NVP(writer);
 	}
 };
-BOOST_SERIALIZATION_ASSUME_ABSTRACT(writer1)
 
 #endif
